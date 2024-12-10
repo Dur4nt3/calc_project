@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    margin: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    background-color: #424242;
+    /* background-image: linear-gradient(57deg, #1008ff 19%, #9101ff 62%); */
+
+
+}
+
+.head {
+    font-family: 'Calculator', sans-serif;
+    font-size: 84px;
+    font-weight: bold;
+    color: #00d535;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.calc-cont {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 32rem;
+    max-height: 32rem;
+    aspect-ratio: 3 / 5;
+    background-color: black;
+    border-radius: 12px;
+    padding: 12px;
+    justify-content: center;
+    box-shadow: -1px -1px 4px 3px rgba(0,0,0,0.9);
+}
+
+.calc-cont > .display > input {
+    font-family: 'Calculator', sans-serif;
+    font-size: 34px;
+    color: black;
+    min-height: 4rem;
+    max-height: 4rem;
+    aspect-ratio: 4 / 1;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: #5e8e68;
+}
+
+.calc-cont > * > button {
+    font-family: 'Calculator', sans-serif;
+    font-size: 22px;
+    min-height: 4rem;
+    max-height: 4rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    margin-left: 4px;
+}
+
+.calc-cont > * > button:active {
+    background-color: #cecece;
+}
+
+.function-button > button {
+    color: white;
+    background-color: #909090;
+    border: 3px groove #949494;
+}
+
+
+.function-button > .backspace > span {
+    margin-top: 0.4rem;
+    margin-right: 0.2rem;
+}
+
+.operator-button > button {
+    color: white;
+    background-color: #ffa200;
+    border: 3px groove #dea800;
+}
+
+.number-button > button {
+    color: white;
+    background-color: #4d4d4d;
+    border: 3px groove #070707;
+}
+
+.zero > button {
+    min-height: 4rem;
+    max-height: 4rem;
+    aspect-ratio: 2 / 1;
+}
+
+.footer {
+    font-family: 'Calculator', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00d535;
+    text-align: center;
+}
+
+.footer a {
+    color: #00d535;
+    text-decoration: none;
+}
+
+.footer a:link {
+    color: #00d535;
+}
+
+.footer a:visited {
+    color: #00d535;
+}
+
+.footer a:hover {
+    color: #3eff00;
+}
